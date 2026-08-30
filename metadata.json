@@ -1,0 +1,10 @@
+{
+  "name": "Sirafi Tickets - نظام تذاكر الحديقة وخريطة الحصن التفاعلية",
+  "description": "نظام رقمي متكامل لإدارة تذاكر الحديقة، الوحدات، الدخول، والألعاب والسلامة العائلية مع خريطة الحصن التفاعلية والجولة التعليمية.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

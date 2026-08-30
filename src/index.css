@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* 3D Tactile Game-like Buttons with rounded-3xl corners and playful responsive depth */
+  .btn-game-amber {
+    @apply bg-amber-400 hover:bg-amber-300 text-slate-950 font-black border-b-[5px] border-amber-600 hover:border-amber-500 active:border-b-0 active:translate-y-[5px] transition-all rounded-3xl shadow-lg cursor-pointer text-sm sm:text-base;
+  }
+  
+  .btn-game-rose {
+    @apply bg-rose-500 hover:bg-rose-400 text-white font-black border-b-[5px] border-rose-700 hover:border-rose-600 active:border-b-0 active:translate-y-[5px] transition-all rounded-3xl shadow-lg cursor-pointer text-sm sm:text-base;
+  }
+
+  .btn-game-emerald {
+    @apply bg-emerald-500 hover:bg-emerald-400 text-white font-black border-b-[5px] border-emerald-700 hover:border-emerald-600 active:border-b-0 active:translate-y-[5px] transition-all rounded-3xl shadow-lg cursor-pointer text-sm sm:text-base;
+  }
+
+  .btn-game-sky {
+    @apply bg-sky-400 hover:bg-sky-300 text-slate-950 font-black border-b-[5px] border-sky-600 hover:border-sky-500 active:border-b-0 active:translate-y-[5px] transition-all rounded-3xl shadow-lg cursor-pointer text-sm sm:text-base;
+  }
+
+  .btn-game-purple {
+    @apply bg-purple-500 hover:bg-purple-400 text-white font-black border-b-[5px] border-purple-700 hover:border-purple-600 active:border-b-0 active:translate-y-[5px] transition-all rounded-3xl shadow-lg cursor-pointer text-sm sm:text-base;
+  }
+
+  .btn-game-teal {
+    @apply bg-teal-500 hover:bg-teal-400 text-white font-black border-b-[5px] border-teal-700 hover:border-teal-600 active:border-b-0 active:translate-y-[5px] transition-all rounded-3xl shadow-lg cursor-pointer text-sm sm:text-base;
+  }
+
+  .btn-game-indigo {
+    @apply bg-indigo-500 hover:bg-indigo-400 text-white font-black border-b-[5px] border-indigo-700 hover:border-indigo-600 active:border-b-0 active:translate-y-[5px] transition-all rounded-3xl shadow-lg cursor-pointer text-sm sm:text-base;
+  }
+
+  .btn-game-white {
+    @apply bg-white hover:bg-slate-50 text-slate-900 font-black border-b-[4px] border-slate-300 hover:border-slate-400 active:border-b-0 active:translate-y-[4px] transition-all rounded-3xl shadow-md cursor-pointer text-sm sm:text-base;
+  }
+
+  .btn-game-dark {
+    @apply bg-slate-800 hover:bg-slate-700 text-white font-black border-b-[4px] border-slate-950 hover:border-slate-900 active:border-b-0 active:translate-y-[4px] transition-all rounded-3xl shadow-md cursor-pointer text-sm sm:text-base;
+  }
+
+  /* Joyful card borders and bubble shadows */
+  .card-playful {
+    @apply rounded-3xl border-2 shadow-xl transition-all;
+  }
+
+  /* Fun animations */
+  @keyframes bounce-subtle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  .animate-bounce-subtle {
+    animation: bounce-subtle 2.5s infinite ease-in-out;
+  }
+
+  @keyframes pulse-ring {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0.8; }
+  }
+
+  .animate-pulse-ring {
+    animation: pulse-ring 2s infinite ease-in-out;
+  }
+}
+
