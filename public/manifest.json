@@ -1,0 +1,61 @@
+{
+  "short_name": "Sirafi",
+  "name": "Sirafi Tickets - نظام تذاكر الحديقة وخريطة الحصن التفاعلية",
+  "description": "نظام رقمي متكامل لإدارة تذاكر الحديقة، الوحدات، الدخول، والألعاب والسلامة العائلية مع خريطة الحصن التفاعلية والجولة التعليمية.",
+  "id": "com.sirafitickets.app",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "window-controls-overlay"],
+  "orientation": "portrait-primary",
+  "background_color": "#fffbeb",
+  "theme_color": "#d97706",
+  "dir": "rtl",
+  "lang": "ar",
+  "categories": ["entertainment", "travel", "family"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "تذاكري وحسابي",
+      "short_name": "تذاكري",
+      "description": "استعراض تذاكر الدخول والألعاب ورصيد الوحدات",
+      "url": "/?role=visitor",
+      "icons": [{ "src": "/icons/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "خريطة الحصن التفاعلية",
+      "short_name": "الخريطة",
+      "description": "استعراض خريطة الكنز والألعاب والضغط اللحظي",
+      "url": "/?map=open",
+      "icons": [{ "src": "/icons/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "غرفة الأمن والسلامة",
+      "short_name": "الأمن",
+      "description": "رصد الحشود وبلاغات المفقودين وتجميد التذاكر",
+      "url": "/?role=security",
+      "icons": [{ "src": "/icons/icon-192.svg", "sizes": "192x192" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

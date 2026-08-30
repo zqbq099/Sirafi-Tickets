@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="bgGrad192" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="goldGrad192" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+  </defs>
+
+  <rect width="192" height="192" rx="42" fill="url(#bgGrad192)" />
+  <rect x="6" y="6" width="180" height="180" rx="36" fill="none" stroke="url(#goldGrad192)" stroke-width="3" opacity="0.6" />
+
+  <g transform="translate(20, 20)">
+    <!-- Castle Sillhouette -->
+    <path d="M 24 135 L 24 85 L 42 85 L 42 60 L 54 60 L 54 45 L 66 45 L 66 60 L 78 60 L 78 85 L 84 85 L 84 60 L 96 60 L 96 45 L 108 45 L 108 60 L 120 60 L 120 85 L 138 85 L 138 135 Z" fill="#78350f" opacity="0.3" />
+
+    <!-- Golden Ticket -->
+    <g transform="translate(18, 32) rotate(-8)">
+      <rect x="0" y="0" width="105" height="58" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="3"/>
+      <circle cx="0" cy="29" r="8" fill="#d97706" />
+      <circle cx="105" cy="29" r="8" fill="#d97706" />
+      <line x1="32" y1="6" x2="32" y2="52" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 3"/>
+      <rect x="10" y="15" width="14" height="14" rx="2" fill="#d97706" />
+      <rect x="42" y="16" width="50" height="8" rx="3" fill="#b45309" />
+      <rect x="42" y="28" width="34" height="6" rx="2" fill="#d97706" opacity="0.8" />
+      <rect x="42" y="38" width="42" height="6" rx="2" fill="#f59e0b" opacity="0.7" />
+    </g>
+
+    <!-- Star Shield -->
+    <g transform="translate(95, 80)">
+      <polygon points="25,0 32,16 50,18 37,31 40,48 25,40 10,48 13,31 0,18 18,16" fill="url(#goldGrad192)" stroke="#b45309" stroke-width="1.5"/>
+      <path d="M 25 12 C 31 12, 35 16, 35 22 C 35 32, 25 38, 25 38 C 25 38, 15 32, 15 22 C 15 16, 19 12, 25 12 Z" fill="#059669" />
+      <path d="M 20 23 L 23 26 L 30 19" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

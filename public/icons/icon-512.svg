@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  
+  <!-- Outer Gold Border Ring -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="url(#goldGrad)" stroke-width="6" opacity="0.6" />
+
+  <!-- Castle / Theme Park Tower Crest with Ticket -->
+  <g filter="url(#shadow)" transform="translate(40, 40)">
+    <!-- Castle Wall & Towers -->
+    <path d="M 64 360 L 64 220 L 112 220 L 112 160 L 144 160 L 144 120 L 176 120 L 176 160 L 208 160 L 208 220 L 224 220 L 224 160 L 256 160 L 256 120 L 288 120 L 288 160 L 320 160 L 320 220 L 368 220 L 368 360 Z" fill="#78350f" opacity="0.35" />
+    
+    <!-- Central Castle Gate Arch -->
+    <path d="M 176 360 L 176 280 C 176 240, 256 240, 256 280 L 256 360 Z" fill="#451a03" />
+
+    <!-- Golden Admission Ticket in Front -->
+    <g transform="translate(60, 90) rotate(-10)">
+      <rect x="0" y="0" width="260" height="140" rx="16" fill="#fffbeb" stroke="#f59e0b" stroke-width="6"/>
+      <!-- Ticket Notches -->
+      <circle cx="0" cy="70" r="16" fill="#d97706" />
+      <circle cx="260" cy="70" r="16" fill="#d97706" />
+      <!-- Ticket Details Lines -->
+      <line x1="80" y1="14" x2="80" y2="126" stroke="#f59e0b" stroke-width="3" stroke-dasharray="8 6"/>
+      <rect x="24" y="36" width="36" height="36" rx="6" fill="#f59e0b" />
+      <rect x="28" y="40" width="28" height="28" rx="4" fill="#fffbeb" />
+      <rect x="36" y="48" width="12" height="12" fill="#d97706" />
+      <!-- Ticket Text Bars -->
+      <rect x="104" y="36" width="120" height="16" rx="6" fill="#b45309" />
+      <rect x="104" y="62" width="80" height="12" rx="4" fill="#d97706" opacity="0.8" />
+      <rect x="104" y="84" width="100" height="12" rx="4" fill="#f59e0b" opacity="0.7" />
+    </g>
+
+    <!-- Star & Shield of Safety Badge -->
+    <g transform="translate(260, 220)">
+      <polygon points="60,0 78,38 120,44 90,74 97,116 60,96 23,116 30,74 0,44 42,38" fill="url(#goldGrad)" stroke="#b45309" stroke-width="3"/>
+      <!-- Shield inside Star -->
+      <path d="M 60 30 C 75 30, 85 40, 85 55 C 85 80, 60 95, 60 95 C 60 95, 35 80, 35 55 C 35 40, 45 30, 60 30 Z" fill="#059669" />
+      <!-- Checkmark -->
+      <path d="M 48 58 L 56 66 L 72 48" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>

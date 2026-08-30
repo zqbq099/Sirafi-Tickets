@@ -20,7 +20,8 @@ import {
   Zap,
   Palmtree,
   Compass,
-  HelpCircle
+  HelpCircle,
+  Database
 } from 'lucide-react';
 
 export const Header: React.FC = () => {
@@ -180,6 +181,15 @@ export const Header: React.FC = () => {
               </>
             )}
           </button>
+
+          {/* Persistent Offline Storage Status */}
+          <div 
+            title="تخزين محلي عميق مفعل (IndexedDB + Persistent Cache) لحفظ كافة التذاكر والعمليات دون انقطاع"
+            className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded-2xl bg-emerald-50 dark:bg-slate-800 border-2 border-emerald-300 dark:border-emerald-700/60 text-emerald-800 dark:text-emerald-300 text-[11px] font-black shadow-xs"
+          >
+            <Database className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+            <span>حفظ محلي دائم ✓</span>
+          </div>
 
           {/* Demo Reset Button */}
           <button

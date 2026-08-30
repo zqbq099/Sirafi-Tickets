@@ -90,6 +90,7 @@ import {
 } from '../utils/mockData';
 import { decodeAndVerifyQR, encodeQRPayload, generateNonce, generateSignature, sound } from '../utils/crypto';
 import { triggerCelebrationConfetti, triggerGrandCelebration } from '../components/common/AchievementBadge';
+import { offlineStorageEngine } from '../utils/offlineStorageEngine';
 
 interface QRModalState {
   isOpen: boolean;
@@ -619,6 +620,24 @@ export const ParkProvider: React.FC<{ children: React.ReactNode }> = ({ children
   useEffect(() => {
     localStorage.setItem(STORAGE_KEYS.SPENT_NONCES, JSON.stringify(spentNonces));
   }, [spentNonces]);
+
+  // Deep Snapshot persistence to IndexedDB (Ensures zero data loss and persistent storage on Android)
+  useEffect(() => {
+    offlineStorageEngine.saveDeepSnapshot({
+      timestamp: new Date().toISOString(),
+      visitor,
+      tickets,
+      attractions,
+      events,
+      alerts: missingAlerts,
+      employees,
+      syncQueue: offlineSyncQueue,
+      spentNonces,
+      notifications,
+      weather,
+      achievements
+    });
+  }, [visitor, tickets, attractions, events, missingAlerts, employees, offlineSyncQueue, spentNonces, notifications, weather, achievements]);
 
   const logEvent = (eventData: Omit<ParkEvent, 'id' | 'timestamp' | 'signatureHash'>): ParkEvent => {
     const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
